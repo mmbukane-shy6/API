@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](http://opensource.org/licenses/MIT)   
 #### Author
-> S.
+> Sheila Egeidza.
 
 ## Description
 Awwards is an application that allows users to post projects that they have created and get it reviewed by their peers.
@@ -114,7 +114,7 @@ There are no know bugs at the moment
 
 ## License
 [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](http://opensource.org/licenses/MIT)
->MIT license &copy;  2019 Victor
+>MIT license &copy;  2019 shy
  
 ## Collaboration Information
 * Clone the repository
