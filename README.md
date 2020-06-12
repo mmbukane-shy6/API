@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](http://opensource.org/licenses/MIT)   
 #### Author
-> Victor Waichigo K.
+> S.
 
 ## Description
 Awwards is an application that allows users to post projects that they have created and get it reviewed by their peers.
@@ -22,8 +22,7 @@ A project can be rated based on 3 different criteria
 Clone the the repository by running 
 
    ```bash
-   git clone https://github.com/kamauvick/Awwards.git
-   ```
+   ```https://github.com/mmbukane-shy6/AWARDS.git
  or download a zip file of the project from github
  
 
