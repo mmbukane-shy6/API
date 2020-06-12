@@ -1,4 +1,4 @@
-{% load bootstrap3 %}
+{% load bootstrap4 %}
 {% load static%}
 <html>
 <head>
@@ -16,12 +16,7 @@
 
     </script>
 
-    <script>
-    UPLOADCARE_PUBLIC_KEY = '36a7f968cdbd63b5bcc3';
-
-    </script>
-
-    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="referrer" content="origin-when-cross-origin"/>
@@ -52,6 +47,8 @@
 
 </head>
 <body>
+
+    
 {% include 'main/navbar.html'%}
 
 {% block content %}
@@ -79,7 +76,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Awwwards",
+        "name": "awwwards",
         "url": "https://www.awwwards.com",
         "logo": "https://assets.awwwards.com/assets/images/logo-schema.png",
         "sameAs": [
@@ -91,7 +88,7 @@
             "https://www.pinterest.es/awwwardscom/"
         ]
     }
-</script>
+</script> 
 
 <!-- Google Tag Manager -->
 <noscript>
@@ -121,3 +118,5 @@
 <!-- End Google Tag Manager -->
 {% bootstrap_javascript %}
 {% endblock %}
+
+</html>

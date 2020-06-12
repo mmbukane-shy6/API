@@ -1,93 +1,231 @@
-{% extends 'base.html'%} {% block content %}
-<section class="main-banner" id="home">
+{% extends 'base.html'%}
+{% block content %}
+{% load static%}
+<body class="home" data-debug="0">
+<div class="wrapper ">
+    <section id="content">
+        <div class="content-view">
+            <div class="box-site-head js-single-element"
+                 data-model="{&quot;likes&quot;:55,&quot;id&quot;:38186,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2019\/10\/5da42f4e8967d075754281.jpg&quot;},&quot;slug&quot;:&quot;laguta-laguta&quot;,&quot;title&quot;:&quot;Laguta &amp; Laguta&quot;,&quot;createdAt&quot;:1571616000,&quot;tags&quot;:[&quot;Design Agencies&quot;,&quot;Mobile &amp; Apps&quot;,&quot;Web &amp; Interactive&quot;,&quot;Flat Design&quot;,&quot;Minimal&quot;,&quot;Portfolio&quot;,&quot;Responsive Design&quot;,&quot;Black&quot;,&quot;Red&quot;,&quot;White&quot;,&quot;Gallery&quot;,&quot;GSAP Animation&quot;,&quot;UI design&quot;,&quot;Nuxt.js&quot;],&quot;type&quot;:&quot;submission&quot;}">
+                <div class="box-bg has-tablet" style="height:500px;">
+                    <a href="/">
 
-    <div class="container">
-
-        <div class="baner-info-w3ls text-left">
-            <h1 id="heading"><a href="/">Awwards</a></h1>
-            <h6 class="mx-auto mt-4" id="heading-small">A
-                collection of my favourite projects </h6> <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll"
-                                                             href="#about" role="button">Explore</a>
-
-            <div class="banner-high-lights text-left">
-
-                <div class="rotate">
-                    <a href="#about" class="scroll">
-
-                        <span class="fa fa-long-arrow-down">
-</span> </a>
+                        <img src="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80"
+                             data-src="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80"
+                             alt="Laguta &amp; Laguta" width="1900" height="200" class="lazy"/>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- what we do -->
-<section id="about">
-
-    <div class="container">
-
-        <div class="text-center">
-            <h3 class="title_head mt-5">Search projects</h3>
-
-            <form class="form-input" role="search" action="/search">
-
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search Projects..." name="image">
-
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </div>
+                <div class="box-photo has-mobile">
+                    <a href="/">
+                        <img src="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80"
+                             data-srcset="https://images.unsplash.com/photo-1517486430290-35657bdcef51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80"
+                             alt="Laguta &amp; Laguta" class="lazy"/>
+                        <div class="ribbon">
+                            <img width="90" height="151"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAACXAQMAAACvEN4rAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABZJREFUOMtjGAWjYBSMglEwCkbBYAYAB6sAAfz0o9UAAAAASUVORK5CYII="
+                                 srcset="https://assets.awwwards.com/assets/images/ribbons/sotd_white_left.png 1x, https://assets.awwwards.com/assets/images/ribbons/sotd_white_left@2x.png 2x"
+                                 alt="Site of the Day"/>
+                        </div>
+                    </a>
                 </div>
+                <div class="box-content">
+                    <a href="/" class="site-link" aria-label="Laguta &amp; Laguta"></a>
+                    <div class="inner vertical-center">
+                        <div class="box-info">
+                            <div class="row">
+                                <h2 class="heading-large"><a href="{{image.url}}">Parrot Blue</a></h2>
+                            </div>
+                            <div class="row">
+                                <div class="by">
+                                    by <strong>
 
-                <!--<div class="d-block mx-auto mt-3 p3" style="display:flex;"> <a href="/category"><button class="btn btn-success">Categories</button></a> <a href="/locale"><button class="btn btn-success">Location</button></a> -->
-                <!--</div> -->
-            </form>
+                                    <a href="/">Test User</a>
+                                </strong> from <strong>Ngong Lane</strong> with <strong>7.53</strong>
+                                </div>
+                            </div>
+                            <div class="box-notesite js-notes">
+                                    <li class="circle-note-progress style-design" data-note="">
+                                        <div class="circle">
+                                            <div class="des">
+                                                <p class="d-block mx-auto textrate">9.09</p>
+                                            </div>
+                                        </div>
+                                        <div class="legend">DESIGN</div>
+                                    </li>
+                                    <li class="circle-note-progress style-usability"
+                                        data-note="{{rating.usability_average}}">
+                                        <div class="circle">
+                                            <div class="des1">
+                                                <p class="d-block mx-auto textrate">7.78</p>
+                                            </div>
+                                        </div>
+                                        <div class="legend">USABILITY</div>
+                                    </li>
+                                    <li class="circle-note-progress style-creativity"
+                                        data-note="{{rating.content_average}}">
+                                        <div class="circle">
+                                            <div class="des2">
+                                                <p class="d-block mx-auto textrate">5.76</p>
+                                            </div>
+                                        </div>
+                                        <div class="legend">CONTENT</div>
+                                    </li>
+                                    <li class="circle-note-progress style-content" data-note="5.65">
+                                        <div class="circle">
+                                            <div class="des3">
+                                                <p class="d-block mx-auto textrate">12.45</p>
+                                            </div>
+                                        </div>
+                                        <div class="legend">SCORE</div>
+                                    </li>
+                                </ul>
 
-            <p class="main_p mt-4 mb-4 pt-2 text-center mx-auto">Search projects</p>
-        </div>
-    </div>
-</section>
-<!-- Gallery -->
-<section class="gallery py-5" id="gallery">
+                            </div>
+                        </div>
+                        <div class="box-breadcrumb">
+                            <div class="box-left">
+                                <strong class="parent">
+                                    <a href="/">Site of the Day</a>
+                                </strong>
+                                <span class="text-x-thin">October 21, 2019</span>
+                            </div>
+                            <div class="box-right">
+                                <div class="list-share-circles style2 light">
+                                </div>
 
-    <div class="container">
+                            </div>
+                        </div>
+                        <div class="box-bl">
+                            <a href="/" data-identifier="laguta-laguta" data-type="submission"
+                               class="js-visit-item bt-default green-fill" target="_blank" rel="noopener nofollow">Visit
+                                Site</a>
 
-        <div class="inner-sec-wthree py-lg-5 py-3">
-
-            <div class="text-center">
-                <h3 class="tittle_head">Collection</h3>
-
-                <p class="main_p mt-4 mb-4 pt-2 text-center mx-auto">A collection of projects.</p>
-            </div>
-
-            <div class="row news-grids mt-lg-5 mt-4 text-center">
-                {%for image in all_images %}
-
-                <div class="col-md-4 gal-img">
-                    <a href="#gal1"><img src="{{image.image.url}}" alt="gallery img" class="img-fluid"></a>
-                    <div class="mr-3 ml-3">
-                        <p class="mt-2">{{image.title}}</p>
-                        <div class="user-details">
-                            <p>from location</p>
-                            <p> date</p>
+                            <strong class="bt-item bt-default js-collect">Collect</strong>
 
                         </div>
-                        <div class="p-and-t-row">
-                            <div class="prof-row">
-                                <img src="" alt="">
-                                <p>By {{user.user.name}} name</p>
-                            </div>
-                            <div class="tag-row">
-                                <p><span>html</span> <span>css</span></p>
+                        <div class="box-br">
+
+                            <div class="box-users-likes">
+
                             </div>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
+            </div>
+
+            <div class="block p-0" id="block-sod">
+            </div>
+
+            <div class="block p-0">
+                <div class="inner">
+                    <div class="box-heading">
+                        <div class="box-left">
+                            <h2 class="title">
+                                <a href="/" class="text-black">
+                                    Nominees
+                                </a>
+                            </h2>
+                            <span>We need your vote!</span>
+                        </div>
+                    </div>
+                    <div class="grid js-grid" id="items-row">
+                        <ul class="list-items list-flex list-one-row js-elements-container">
+                            {% for image in all_images%}
+                            <li class="col-3 js-collectable">
+                                <div class="box-item">
+                                    <figure class="rollover ">
+                                        <a href="/">
+                                            <div class="box-photo">
+                                                {% if image.image %}
+                                                <img src="{{image.image.url}}" alt="Our Place" width="417" height="298"class="lazy"/>
+                                                {% endif %}
+                                            
+                                            </div>
+                                        </a>
+
+                                        <div class="hover-item top">
+                                            <span class="js-options-collectable"></span>
+
+                                            <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                    <svg class="ico-svg" viewbox="0 0 15 14">
+        <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+    </svg>
+           {% for rating in ratings%} <span class="number"> {{rating.design}}</span>
+
+                    {%endfor%}
+
+                                           </span></div>
+
+                                        <div class="hover-item bottom">
+                                            <a class="js-visit-item bt-item bt-link" href="{{image.link}}"
+                                               data-identifier="our-place" data-type="submission" target="_blank"
+                                               rel="noopener nofollow">
+                                                <svg class="ico-svg" viewbox="0 0 22.24 14">
+                                                    <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <div class="hover-item center">
+                                            <a href="{% url 'project' image.title %}"
+                                               class="bt-default white-fill large vote-now">VOTE
+                                                NOW</a>
+                                        </div>
+                                    </figure>
+
+                                    <div class="box-info">
+                                        <div class="content">
+                                            <div class="row">
+                                                <h3><a href="/">{{image.title}}</a></h3>
+                                            </div>
+                                            <div class="row row-2col">
+                                                <div class="box-left">From United States</div>
+
+                                                <div class="box-right">
+                                                    October 18, 2019
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer style2">
+                                            <div class="box-left">
+                                                <div class="box-byuser js-tooltip-user">
+                                                    <div class="item js-user" data-username="thecouch">
+                                                        <a href="">
+                                                            {% if profile.profile_picture %}
+                                                            <img src="{{profile.profile_picture.url}}"
+                                                                 width="27"
+                                                                 height="27" alt="{{image.title}}" class="lazy"/>
+                                                        
+                                                        {% else %}
+                                                        image{{image.user.prof_user.profile_picture.url}}
+                                                        <img src=""
+                                                                 width="27"
+                                                                 height="27" alt="{{image.title}}" class="lazy"/>
+                                                        {% endif %}
+                                                    </a>
+                                                    </div>
+                                                    <div class="by">
+                                                        by <strong><a href="{% url 'profile' image.user.username%}"
+                                                                      class="text-black">{{image.user.username}}</a></strong>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="box-right">
+                                                <ul class="list-tags size-small">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-{% endblock %}
+    </section>
+</div>
+</body>
+{%endblock}
