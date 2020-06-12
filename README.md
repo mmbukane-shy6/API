@@ -122,3 +122,6 @@ There are no know bugs at the moment
 * Make changes and write tests
 * Push changes to github
 * Create a pull request
+## Contacts
+Reach me on:
+>Email:  sheilaegeidza@gmail.com
